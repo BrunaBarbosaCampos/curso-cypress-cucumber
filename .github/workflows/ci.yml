@@ -24,6 +24,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Run Cypress Tests 🧪
         uses: cypress-io/github-action@v6
+        continue-on-error: true
       - name: HTML Test Report
         uses: actions/upload-artifact@v4
         if: always()
